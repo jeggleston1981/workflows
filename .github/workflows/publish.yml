@@ -58,6 +58,7 @@ jobs:
           path: output
 
   publish:
+    permissions: read-all|write-all
     name: Publish new firmware and website to GitHub Pages
     runs-on: ubuntu-latest
     needs: [build]
